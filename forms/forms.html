@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+<!-- jQuery and JS bundle w/ Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+   
+    <link rel="stylesheet" href="forms.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body class="all">
+  <h1 style="text-align:center ;">Registration form</h1>
+  <form>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control " id="name" placeholder="Enter your name" required>
+      <small class="invalid-feedback"  class="form-text text-muted invalid-feedback">
+        Please enter a valid name
+      </small>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Email </label>
+      <input type="text" class="form-control " id="email" placeholder="Enter you email" required>
+      <small class="invalid-feedback" class="form-text text-muted invalid-feedback">
+       Please enter a valid email
+      </small>
+    </div>
+    <div class="form-check">
+      <label for="exampleFormControlInput1" >Gender</label>
+      
+      <br>
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"required >
+      <label class="form-check-label" for="exampleRadios1">
+       Male
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+      <label class="form-check-label" for="exampleRadios2">
+       Female
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
+      <label class="form-check-label" for="exampleRadios3">
+       other
+      </label>
+      <small  id ="namevalid" class="form-text text-muted invalid-feedback">
+        Please select one option</small>
+    </div>
+    
+    <div class="form-group">
+      <label for="states">States</label>
+      <select  class="custom-select" id="states" required>
+        <option selected disabled value="">States...</option>
+        <option>Karnatka</option>
+        <option>Kerala</option>
+        <option>Hyderbad</option>
+        <option>Tamilnadu</option>
+        <option>Goa</option>
+        <option>Assam</option>
+        <option>Bihar</option>
+        <option>Delhi</option>
+      </select>
+      <small  id ="namevalid" class="form-text text-muted invalid-feedback">
+        Please select one option
+      </small>
+    </div>
+    
+      <label for="text arae">textarea</label><br>
+
+      <textarea name="ta" rows="6" style="width:340px;" 
+      onKeyDown="textCounter(this.form.ta,this.form.countDisplay);"
+       onKeyUp="textCounter(this.form.ta,this.form.countDisplay);"></textarea>
+<br>
+<input readonly type="text" name="countDisplay" size="3" maxlength="3" value="200"> Characters Remaining
+   <br>
+    <button class="btn btn-primary" type="submit" > Register</button>
+  </form>
+    <script src="forms.js"></script>
+</body>
+</html>

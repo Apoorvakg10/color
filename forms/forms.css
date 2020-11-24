@@ -1,0 +1,14 @@
+#success_message{ 
+    display: none;
+
+    
+}
+
+
+.all{
+    padding: 50px;
+    padding-left: 100px;
+    padding-right: 200px;
+    background-color: purple;
+    color: rgb(241, 188, 14);
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+</head>
+<body>
+    <div class="container">
+        <br>
+        <h1 class="text-success text-center">sign up form</h1><br>
+        <div class="col-lg-8 m-auto d-block">
+            <form action="#" onsubmit="return formvalidate()" class="bg-light">
+                <div class="form-group">
+                    <label >Name:</label>
+                    <input type="text" name="user" class="form-control" id="user" autocomplete="off">
+                    <span id="username" class="text-danger font-weight-bold">
+
+                    </span>
+                </div>
+                <div class="form-group">
+                    <label >Email:</label>
+                    <input type="text" name="email" class="form-control" id="email" autocomplete="off">
+                    <span id="emai" class="text-danger font-weight-bold"></span>
+                </div>
+               
+               
+                <div class="form-check">
+                    <label>Gender:</label>
+                    
+                    <br>
+                    <input class="form-check-input" type="radio" name="male" id="male" >
+                    <label class="form-check-label" for="exampleRadios1" >
+                     Male
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="female" id="female" >
+                    <label class="form-check-label" for="exampleRadios2">
+                     Female
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="other" id="other"  >
+                    <label class="form-check-label" for="exampleRadios3">
+                     other
+                    </label>
+                    <span id="gen" class="text-danger font-weight-bold"></span>
+                  </div>
+                
+                <div class="form-group">
+                    <label for="states">States</label>
+                    <select  class="form-control" id="states" autocomplete="off">
+                      <option selected disabled value="">States...</option>
+                      <option>Karnatka</option>
+                      <option>Kerala</option>
+                      <option>Hyderbad</option>
+                      <option>Tamilnadu</option>
+                      <option>Goa</option>
+                      <option>Assam</option>
+                      <option>Bihar</option>
+                      <option>Delhi</option>
+                    </select>
+                    <span id="state" class="text-danger font-weight-bold">
+                        
+                    </span>
+                    </div>
+                <label for="text arae">Textarea</label><br>
+
+                <textarea name="ta" rows="4" style="width:400px;" 
+                onKeyDown="textCounter(this.form.ta,this.form.countDisplay);"
+                 onKeyUp="textCounter(this.form.ta,this.form.countDisplay);"></textarea><br>
+                 <input type="submit" name="submit" value="register" class="btn btn-success" autocomplete="off">
+
+            </form>
+        </div>
+    </div>
+    <script  src="regis.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <form action="form1" id="fr" align="center" >
+        <button type="button" class="button button1" onclick="showLogin('login')"> Login</button>
+        <button type="button" class="button button2" onclick="showsignup('sign up')"> sign up</button>
+    </form>
+        
+  <form id="sign up" action="" style="display: none;"> 
+    <input type="submit" value="sign up">
+    <h1 style="text-align:center ;">Registration form</h1>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control " id="name" placeholder="Enter your name" required>
+      <small class="invalid-feedback"  class="form-text text-muted invalid-feedback">
+        Please enter a valid name
+      </small>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Email </label>
+      <input type="text" class="form-control " id="email" placeholder="Enter you email" required>
+      <small class="invalid-feedback" class="form-text text-muted invalid-feedback">
+       Please enter a valid email
+      </small>
+    </div>
+    <label for="name">Password</label>
+      <input type="text" class="form-control " id="name" placeholder="Enter your name" required>
+      <small class="invalid-feedback"  class="form-text text-muted invalid-feedback">
+      password should contain atleat one no and one special character
+      </small>
+    <div class="form-check">
+      <label for="exampleFormControlInput1" >Gender</label>
+      
+      <br>
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"required >
+      <label class="form-check-label" for="exampleRadios1">
+       Male
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+      <label class="form-check-label" for="exampleRadios2">
+       Female
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
+      <label class="form-check-label" for="exampleRadios3">
+       other
+      </label>
+      <small  id ="namevalid" class="form-text text-muted invalid-feedback">
+        Please select one option</small>
+    </div>
+    
+    <div class="form-group">
+      <label for="states">States</label>
+      <select  class="custom-select" id="states" required>
+        <option selected disabled value="">States...</option>
+        <option>Karnatka</option>
+        <option>Kerala</option>
+        <option>Hyderbad</option>
+        <option>Tamilnadu</option>
+        <option>Goa</option>
+        <option>Assam</option>
+        <option>Bihar</option>
+        <option>Delhi</option>
+      </select>
+      <small  id ="namevalid" class="form-text text-muted invalid-feedback">
+        Please select one option
+      </small>
+    </div>
+    
+      <label for="text arae">textarea</label><br>
+
+      <textarea name="ta" rows="6" style="width:340px;" 
+      onKeyDown="textCounter(this.form.ta,this.form.countDisplay);"
+       onKeyUp="textCounter(this.form.ta,this.form.countDisplay);"></textarea>
+<br>
+<input readonly type="text" name="countDisplay" size="3" maxlength="3" value="200"> Characters Remaining
+   <br>
+    <button class="btn btn-primary" type="submit" > Register</button>
+  </form>
+  <form id="login"  action="" style="display: none;">
+    <input type="submit" value="login">
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email </label>
+    <input type="text" class="form-control " id="email" placeholder="Enter you email" required>
+    <small class="invalid-feedback" class="form-text text-muted invalid-feedback">
+     Please enter a valid email
+    </small>
+  </div>
+  <label for="name">Password</label>
+    <input type="text" class="form-control " id="name" placeholder="Enter your password" required>
+    <small class="invalid-feedback"  class="form-text text-muted invalid-feedback">
+    password should contain atleat one no and one special character
+    </small>
+    <button class="btn btn-primary" type="submit" > Register</button>
+    
+</form>
+<script src="login.js"></script>
+<script src="/form.js"></script>
+</body>
+</html>
